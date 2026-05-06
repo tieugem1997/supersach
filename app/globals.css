@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0284c7;
+  --color-primary-dark: #0369a1;
+  --color-primary-light: #e0f2fe;
+  --color-accent: #0d9488;
+  --color-accent-dark: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f9ff;
+  color: #0f172a;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+.animate-fade-in-up-delay {
+  animation: fadeInUp 0.4s ease-out 0.12s both;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.4s ease-out 0.24s both;
+}
+
+.order-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(2, 132, 199, 0.15);
+}
+
+.search-btn {
+  transition: all 0.2s ease;
+}
+
+.search-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px -3px rgba(2, 132, 199, 0.4);
+}
+
+.search-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Ripple effect on search */
+.search-btn:focus-visible {
+  outline: 2px solid #0284c7;
+  outline-offset: 2px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
