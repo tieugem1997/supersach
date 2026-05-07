@@ -295,7 +295,7 @@ export default function FeaturedCard({ order }: FeaturedCardProps) {
         {/* Date */}
         <div className="flex items-center gap-3 p-3.5 bg-slate-50 rounded-2xl">
           <div className="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
-            <Calendar className="w-4.5 h-4.5 text-sky-600" />
+            <Calendar className="w-4 h-4 text-sky-600" />
           </div>
           <div>
             <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Thời gian nhận đồ</p>
@@ -307,7 +307,7 @@ export default function FeaturedCard({ order }: FeaturedCardProps) {
         {formattedTotal && (
           <div className="flex items-center gap-3 p-3.5 bg-emerald-50 rounded-2xl border border-emerald-100/50">
             <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
-              <CreditCard className="w-4.5 h-4.5 text-emerald-600" />
+              <CreditCard className="w-4 h-4 text-emerald-600" />
             </div>
             <div>
               <p className="text-[10px] text-emerald-600/70 font-semibold uppercase tracking-wider">Tổng cộng</p>
@@ -320,7 +320,7 @@ export default function FeaturedCard({ order }: FeaturedCardProps) {
         {order.loaiDich && (
           <div className="flex items-center gap-3 p-3.5 bg-slate-50 rounded-2xl">
             <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-              <Package className="w-4.5 h-4.5 text-slate-500" />
+              <Package className="w-4 h-4 text-slate-500" />
             </div>
             <div>
               <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Loại dịch vụ</p>
@@ -333,7 +333,7 @@ export default function FeaturedCard({ order }: FeaturedCardProps) {
         {order.ghiChu && (
           <div className="flex items-start gap-3 p-3.5 bg-amber-50 rounded-2xl border border-amber-100/50">
             <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <FileText className="w-4.5 h-4.5 text-amber-600" />
+              <FileText className="w-4 h-4 text-amber-600" />
             </div>
             <div>
               <p className="text-[10px] text-amber-600/70 font-semibold uppercase tracking-wider">Ghi chú</p>
@@ -346,7 +346,7 @@ export default function FeaturedCard({ order }: FeaturedCardProps) {
         {shortId && (
           <div className="flex items-center gap-3 p-3.5 bg-slate-50 rounded-2xl">
             <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-              <Hash className="w-4.5 h-4.5 text-slate-400" />
+              <Hash className="w-4 h-4 text-slate-400" />
             </div>
             <div>
               <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Mã đơn hàng</p>
