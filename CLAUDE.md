@@ -109,8 +109,10 @@ Khách hàng nhập **tên** + **3 số cuối SĐT** → xem trạng thái đơ
 
 ### 🚀 Deployment
 - [x] Git commit với message rõ ràng
-- [x] Push lên GitHub (tieugem1997/supersach)
-- [x] Vercel auto-deploy sau push
+- [x] Push lên branch `redesign-v2` trên GitHub
+- [x] PR tạo tại: https://github.com/tieugem1997/supersach/pull/new/redesign-v2
+- [ ] Merge PR vào main (chờ review)
+- [ ] Vercel auto-deploy sau merge
 
 ---
 
