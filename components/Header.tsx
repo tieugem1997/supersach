@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Menu, X } from 'lucide-react';
+import BASE_PATH from '@/lib/config';
 
 const navLinks = [
   { label: 'Trang chủ', href: '/' },
@@ -34,7 +35,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-xl overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform">
               <Image
-                src="/logo.png"
+                src={`${BASE_PATH}/logo.png`}
                 alt="Logo Giặt Sấy SUPER SẠCH"
                 width={36}
                 height={36}

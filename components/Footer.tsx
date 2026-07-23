@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import BASE_PATH from '@/lib/config';
 
 const services = [
   { label: 'Giặt sấy quần áo', href: '/dich-vu/giat-say' },
@@ -27,7 +28,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="w-9 h-9 rounded-xl overflow-hidden flex-shrink-0">
                 <Image
-                  src="/logo.png"
+                  src={`${BASE_PATH}/logo.png`}
                   alt="Logo SUPER SẠCH"
                   width={36}
                   height={36}
